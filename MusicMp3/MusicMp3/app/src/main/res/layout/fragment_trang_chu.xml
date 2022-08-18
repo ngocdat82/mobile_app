@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/gradient"
+    android:layout_height="match_parent"
+    tools:context=".fragment.TrangChuFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/ll_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layoutAnimation="@anim/layout_animation"
+                        android:clipToPadding="false"
+                        android:id="@+id/rcv_home"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp" />
+
+
+                    <TextView
+                        android:visibility="gone"
+                        android:textColor="@color/white"
+                        android:text="Chưa có bài hát nào cả"
+                        android:id="@+id/tv_random"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:text="Đã nghe gần đây"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layoutAnimation="@anim/layout_animation"
+                        android:id="@+id/rcv_ganday"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp" />
+
+                    <TextView
+                        android:textColor="@color/white"
+                        android:text="Chưa có bài hát nào được nghe"
+                        android:id="@+id/tv_ganday"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:text="Bài hát mới nhất"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layoutAnimation="@anim/layout_animation"
+                        android:id="@+id/rcv_moinhat"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp" />
+
+                    <TextView
+                        android:text="Chưa có bài hát nào"
+                        android:textColor="@color/white"
+                        android:id="@+id/tv_moinhat"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:textSize="16sp" />
+
+                    <android.widget.Button
+                        android:id="@+id/btn_them"
+                        android:textStyle="bold"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_below="@id/rcv_moinhat"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/gradient2"
+                        android:text="THÊM BÀI HÁT"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

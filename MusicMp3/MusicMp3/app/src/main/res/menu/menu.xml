@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/trangChuFragment"
+        android:icon="@drawable/trangchu"
+        android:orderInCategory="1"
+        android:title="Trang chủ"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/ngheSiFragment"
+        android:icon="@drawable/casi"
+        android:orderInCategory="2"
+        android:title="Ca sĩ"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/theLoaiFragment"
+        android:icon="@drawable/listnhac"
+        android:orderInCategory="3"
+        android:title="Thể loại"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/albumsFragment"
+        android:icon="@drawable/albums"
+        android:orderInCategory="4"
+        android:title="Albums"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/yeuThichFragment"
+        android:icon="@drawable/yeuthich"
+        android:orderInCategory="5"
+        android:title="Yêu thích"
+        app:showAsAction="always" />
+</menu>

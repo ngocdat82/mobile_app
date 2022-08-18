@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "735889108583",
+    "project_id": "music-a454a",
+    "storage_bucket": "music-a454a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:735889108583:android:f2b2fcf460c6646776eec2",
+        "android_client_info": {
+          "package_name": "com.ngocdat.mp3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "735889108583-2b3qavafc4tlnvgikpuhuimh2jo1m6rh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ngocdat.mp3",
+            "certificate_hash": "94cf068dd698908b817b101e90fe141385668beb"
+          }
+        },
+        {
+          "client_id": "735889108583-1o6ueog5icoagdsun0j6u2jlfb9tg9s8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8bdJvALx0b98Ax8z0KvqQ572JbfE6qYg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "735889108583-1o6ueog5icoagdsun0j6u2jlfb9tg9s8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

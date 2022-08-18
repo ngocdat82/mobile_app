@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/trangChuFragment">
+
+    <fragment
+        android:id="@+id/trangChuFragment"
+        android:name="com.ngocdat.mp3.fragment.TrangChuFragment"
+        android:label="fragment_trang_chu"
+        tools:layout="@layout/fragment_trang_chu" />
+    <fragment
+        android:id="@+id/ngheSiFragment"
+        android:name="com.ngocdat.mp3.fragment.CaSiFragment"
+        android:label="fragment_nghe_si"
+        tools:layout="@layout/fragment_ca_si" >
+        <action
+            android:id="@+id/action_ngheSiFragment_to_chitietFragment"
+            app:destination="@id/chitietFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/theLoaiFragment"
+        android:name="com.ngocdat.mp3.fragment.TheLoaiFragment"
+        android:label="fragment_danh_muc"
+        tools:layout="@layout/fragment_the_loai" >
+        <action
+            android:id="@+id/action_theLoaiFragment_to_chitietFragment"
+            app:destination="@id/chitietFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/albumsFragment"
+        android:name="com.ngocdat.mp3.fragment.AlbumsFragment"
+        android:label="fragment_albums"
+        tools:layout="@layout/fragment_albums" >
+        <action
+            android:id="@+id/action_albumsFragment_to_chitietFragment"
+            app:destination="@id/chitietFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/yeuThichFragment"
+        android:name="com.ngocdat.mp3.fragment.YeuThichFragment"
+        android:label="fragment_yeu_thich"
+        tools:layout="@layout/fragment_yeu_thich" />
+    <fragment
+        android:id="@+id/chitietFragment"
+        android:name="com.ngocdat.mp3.fragment.ChitietFragment"
+        android:label="ChitietFragment" />
+</navigation>

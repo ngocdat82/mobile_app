@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.CaSiFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layoutAnimation="@anim/layout_animation"
+        android:layout_marginHorizontal="4dp"
+        android:id="@+id/rcv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false" />
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_marginTop="200dp"
+        android:id="@+id/emty"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@drawable/doremon_emty"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:tint="@color/main" />
+
+        <TextView
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/main"
+            android:textAlignment="center"
+            android:text="Chưa có ca sĩ nào"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</FrameLayout>
